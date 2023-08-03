@@ -1,0 +1,19 @@
+{
+  "name": "nw-build-tools",
+  "private": true,
+  "scripts": {
+    "start": "node main.mjs",
+    "fmt": "prettier --write ."
+  },
+  "packageManager": "pnpm@8.6.11",
+  "engines": {
+    "node": "v20.5.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.2",
+    "prettier": "^3.0.1"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
