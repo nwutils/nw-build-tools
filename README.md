@@ -1,8 +1,17 @@
 # nw-build-tools
 
-> Currently only Windows platform is supported.
-
 NW.js local development
+
+- [x] Windows Release build
+- [ ] Windows Debug build
+
+- [ ] Linux Release build
+- [ ] Linux Debug build
+
+- [ ] MacOS Release build
+- [ ] MacOS Debug build
+
+> Tested on Windows 11, Ubuntu 22.04 and MacOS Ventura 13 (x64).
 
 ## Getting Started
 
