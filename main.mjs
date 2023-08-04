@@ -1,9 +1,11 @@
 import { spawn } from "node:child_process";
+import { clear } from "node:console";
 import { existsSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { chdir, env } from "node:process";
 
+clear();
 await main();
 
 /**
@@ -118,5 +120,7 @@ solutions = [
 
   await exec("gclient", "sync");
 
-  await exec("gn", "gen", "out/nw");
+  await exec("gn", "gen", "out/nw", "\"--args=is_component_build=false is_debug=false\"");
+
+  await exec("ninja", "-C", "out/nw", "nwjs");
 }
